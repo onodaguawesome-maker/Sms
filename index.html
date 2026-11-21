@@ -35,7 +35,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
 </head>
 <body class="text-zinc-900 pb-24">
 
-<!-- App Top Bar - Dark Gradient, NOT white -->
+<!-- App Top Bar - No Account, No Support -->
 <header class="bg-zinc-900 text-white sticky top-0 z-40 shadow-xl">
   <div class="max-w-[1300px] mx-auto px-4 h-[64px] flex items-center justify-between">
     <div class="flex items-center gap-3">
@@ -44,11 +44,9 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <span class="hidden sm:inline-flex ml-3 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold">● LIVE • 53k online</span>
     </div>
     <div class="flex items-center gap-2">
-      <button class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">🔔</button>
-      <button class="w-9 h-9 rounded-full bg-white text-black flex items-center justify-center font-bold">A</button>
+      <span class="text-xs px-3 py-1.5 rounded-full bg-white text-black font-bold">No Account Needed</span>
     </div>
   </div>
-  <!-- Search inside header like app -->
   <div class="max-w-[1300px] mx-auto px-4 pb-3">
     <div class="flex gap-2">
       <div class="relative flex-1"><span class="absolute left-4 top-3 text-zinc-400">⌕</span><input id="search" oninput="filterServices()" placeholder="Search WhatsApp, Telegram, Gmail..." class="w-full pl-10 pr-4 py-3 rounded-2xl bg-white text-black text-sm outline-none focus:ring-2 ring-violet-500"></div>
@@ -57,13 +55,13 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
   </div>
 </header>
 
-<!-- Colored Hero - App Style -->
+<!-- Colored Hero -->
 <section class="max-w-[1300px] mx-auto px-4 pt-4">
   <div class="rounded-[24px] overflow-hidden bg-gradient-to-r from-violet-600 via-indigo-600 to-fuchsia-600 text-white p-5 sm:p-6 flex flex-col sm:flex-row justify-between gap-4 shadow-xl">
     <div>
       <div class="inline-flex px-3 py-1 rounded-full bg-black/30 backdrop-blur text-xs font-bold">NO PRICE ON SITE • PAY AFTER CONFIRM</div>
       <h1 class="display text-[28px] sm:text-[36px] font-extrabold leading-[0.95] mt-3">Buy Virtual Numbers<br>For Any App.</h1>
-      <p class="text-white/80 text-sm mt-2 max-w-md">Tap any app → Enter Name, WhatsApp &amp; Gmail → We contact you. Order hits Telegram bot instantly.</p>
+      <p class="text-white/80 text-sm mt-2 max-w-md">Tap any app → Enter Name, WhatsApp &amp; Gmail → We contact you in less than an hour. Order hits Telegram bot instantly.</p>
     </div>
     <div class="flex sm:flex-col gap-2 justify-center">
       <div class="flex gap-2"><div class="bg-white text-black rounded-2xl px-4 py-3 text-center flex-1"><div class="font-black text-lg">180+</div><div class="text-[10px] font-bold text-zinc-500">COUNTRIES</div></div><div class="bg-black/30 backdrop-blur rounded-2xl px-4 py-3 text-center flex-1"><div class="font-black text-lg">30s</div><div class="text-[10px] font-bold text-white/70">DELIVERY</div></div></div>
@@ -72,7 +70,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
   </div>
 </section>
 
-<!-- Category Pills - Colorful -->
+<!-- Category Pills -->
 <div class="max-w-[1300px] mx-auto px-4 pt-4 flex gap-2 overflow-x-auto hide-scroll pb-1">
   <button data-cat="all" onclick="setCat('all')" class="cat-btn whitespace-nowrap px-5 py-2.5 rounded-full bg-black text-white text-sm font-bold shadow">All Apps</button>
   <button data-cat="messaging" onclick="setCat('messaging')" class="cat-btn whitespace-nowrap px-5 py-2.5 rounded-full bg-[#dcfce7] border border-green-200 text-green-800 text-sm font-bold">💬 Messaging</button>
@@ -82,23 +80,16 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
   <button data-cat="finance" onclick="setCat('finance')" class="cat-btn whitespace-nowrap px-5 py-2.5 rounded-full bg-[#e0e7ff] border border-indigo-200 text-indigo-800 text-sm font-bold">💳 Finance</button>
 </div>
 
-<!-- Grid - Colored Cards, White Background Only -->
+<!-- Grid -->
 <div class="max-w-[1300px] mx-auto px-4 pt-4">
-  <div class="flex justify-between items-center"><h3 class="font-bold">All Services — Tap to Order</h3><span class="text-xs text-zinc-500">28 apps • Real logos</span></div>
+  <div class="flex justify-between items-center"><h3 class="font-bold">All Services — Tap to Order</h3><span class="text-xs text-zinc-500">24 apps • Real logos</span></div>
   <div id="grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mt-3">
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('WhatsApp','whatsapp.com','from-green-500 to-emerald-600')">
     <div class="h-[86px] bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-between px-4">
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=whatsapp.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=whatsapp.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">WhatsApp</div>
-      <div class="text-[11px] text-zinc-500">whatsapp.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#15803d">● messaging</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">WhatsApp</div><div class="text-[11px] text-zinc-500">whatsapp.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● messaging</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Telegram','telegram.org','from-sky-500 to-blue-600')">
@@ -106,14 +97,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=telegram.org&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=telegram.org&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Telegram</div>
-      <div class="text-[11px] text-zinc-500">telegram.org • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#1d4ed8">● messaging</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Telegram</div><div class="text-[11px] text-zinc-500">telegram.org • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● messaging</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Gmail','gmail.com','from-red-500 to-rose-600')">
@@ -121,14 +105,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=gmail.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=gmail.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Gmail</div>
-      <div class="text-[11px] text-zinc-500">gmail.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#b91c1c">● google</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Gmail</div><div class="text-[11px] text-zinc-500">gmail.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● google</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Google','google.com','from-blue-500 to-indigo-600')">
@@ -136,14 +113,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=google.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=google.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Google</div>
-      <div class="text-[11px] text-zinc-500">google.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#1d4ed8">● google</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Google</div><div class="text-[11px] text-zinc-500">google.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● google</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Facebook','facebook.com','from-blue-600 to-blue-800')">
@@ -151,14 +121,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=facebook.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=facebook.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Facebook</div>
-      <div class="text-[11px] text-zinc-500">facebook.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#1d4ed8">● social</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Facebook</div><div class="text-[11px] text-zinc-500">facebook.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● social</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Instagram','instagram.com','from-pink-500 to-purple-600')">
@@ -166,14 +129,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=instagram.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=instagram.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Instagram</div>
-      <div class="text-[11px] text-zinc-500">instagram.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#be185d">● social</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Instagram</div><div class="text-[11px] text-zinc-500">instagram.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● social</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('TikTok','tiktok.com','from-zinc-800 to-black')">
@@ -181,14 +137,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=tiktok.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=tiktok.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">TikTok</div>
-      <div class="text-[11px] text-zinc-500">tiktok.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#0f172a">● social</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">TikTok</div><div class="text-[11px] text-zinc-500">tiktok.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● social</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('X / Twitter','x.com','from-zinc-700 to-black')">
@@ -196,14 +145,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=x.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=x.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">X / Twitter</div>
-      <div class="text-[11px] text-zinc-500">x.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#0f172a">● social</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">X / Twitter</div><div class="text-[11px] text-zinc-500">x.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● social</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Discord','discord.com','from-indigo-500 to-violet-600')">
@@ -211,14 +153,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=discord.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=discord.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Discord</div>
-      <div class="text-[11px] text-zinc-500">discord.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#4338ca">● messaging</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Discord</div><div class="text-[11px] text-zinc-500">discord.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● messaging</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Snapchat','snapchat.com','from-yellow-400 to-amber-500')">
@@ -226,14 +161,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=snapchat.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=snapchat.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Snapchat</div>
-      <div class="text-[11px] text-zinc-500">snapchat.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#854d0e">● social</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Snapchat</div><div class="text-[11px] text-zinc-500">snapchat.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● social</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Amazon','amazon.com','from-amber-500 to-orange-600')">
@@ -241,14 +169,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=amazon.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=amazon.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Amazon</div>
-      <div class="text-[11px] text-zinc-500">amazon.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#92400e">● shopping</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Amazon</div><div class="text-[11px] text-zinc-500">amazon.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● shopping</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Apple ID','apple.com','from-zinc-700 to-black')">
@@ -256,14 +177,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=apple.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=apple.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Apple ID</div>
-      <div class="text-[11px] text-zinc-500">apple.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#0f172a">● google</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Apple ID</div><div class="text-[11px] text-zinc-500">apple.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● google</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Microsoft','microsoft.com','from-sky-500 to-blue-600')">
@@ -271,14 +185,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=microsoft.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=microsoft.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Microsoft</div>
-      <div class="text-[11px] text-zinc-500">microsoft.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#0369a1">● google</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Microsoft</div><div class="text-[11px] text-zinc-500">microsoft.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● google</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Uber','uber.com','from-zinc-800 to-black')">
@@ -286,14 +193,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=uber.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=uber.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Uber</div>
-      <div class="text-[11px] text-zinc-500">uber.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#0f172a">● shopping</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Uber</div><div class="text-[11px] text-zinc-500">uber.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● shopping</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Netflix','netflix.com','from-red-600 to-red-800')">
@@ -301,14 +201,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=netflix.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=netflix.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Netflix</div>
-      <div class="text-[11px] text-zinc-500">netflix.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#b91c1c">● shopping</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Netflix</div><div class="text-[11px] text-zinc-500">netflix.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● shopping</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('PayPal','paypal.com','from-blue-600 to-indigo-700')">
@@ -316,14 +209,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=paypal.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=paypal.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">PayPal</div>
-      <div class="text-[11px] text-zinc-500">paypal.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#1e40af">● finance</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">PayPal</div><div class="text-[11px] text-zinc-500">paypal.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● finance</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Binance','binance.com','from-yellow-500 to-amber-600')">
@@ -331,14 +217,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=binance.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=binance.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Binance</div>
-      <div class="text-[11px] text-zinc-500">binance.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#854d0e">● finance</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Binance</div><div class="text-[11px] text-zinc-500">binance.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● finance</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('LinkedIn','linkedin.com','from-blue-700 to-sky-600')">
@@ -346,14 +225,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=linkedin.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">LinkedIn</div>
-      <div class="text-[11px] text-zinc-500">linkedin.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#1e40af">● social</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">LinkedIn</div><div class="text-[11px] text-zinc-500">linkedin.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● social</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('OpenAI','openai.com','from-violet-600 to-indigo-600')">
@@ -361,14 +233,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=openai.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=openai.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">OpenAI</div>
-      <div class="text-[11px] text-zinc-500">openai.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#4338ca">● google</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">OpenAI</div><div class="text-[11px] text-zinc-500">openai.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● google</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Spotify','spotify.com','from-green-500 to-emerald-600')">
@@ -376,14 +241,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=spotify.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=spotify.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Spotify</div>
-      <div class="text-[11px] text-zinc-500">spotify.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#15803d">● shopping</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Spotify</div><div class="text-[11px] text-zinc-500">spotify.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● shopping</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Airbnb','airbnb.com','from-rose-500 to-pink-600')">
@@ -391,14 +249,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=airbnb.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=airbnb.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Airbnb</div>
-      <div class="text-[11px] text-zinc-500">airbnb.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#be123c">● shopping</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Airbnb</div><div class="text-[11px] text-zinc-500">airbnb.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● shopping</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('LINE','line.me','from-green-500 to-lime-600')">
@@ -406,14 +257,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=line.me&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=line.me&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">LINE</div>
-      <div class="text-[11px] text-zinc-500">line.me • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#15803d">● messaging</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">LINE</div><div class="text-[11px] text-zinc-500">line.me • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● messaging</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Shopee','shopee.com','from-orange-500 to-amber-600')">
@@ -421,14 +265,7 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=shopee.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=shopee.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Shopee</div>
-      <div class="text-[11px] text-zinc-500">shopee.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#9a3412">● shopping</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Shopee</div><div class="text-[11px] text-zinc-500">shopee.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● shopping</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('Coinbase','coinbase.com','from-blue-600 to-indigo-600')">
@@ -436,76 +273,72 @@ body{font-family:'Inter',sans-serif;background:#f3f4f6}
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="https://www.google.com/s2/favicons?domain=coinbase.com&amp;sz=128" onerror="this.src='https://www.google.com/s2/favicons?domain=coinbase.com&amp;sz=128'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">Coinbase</div>
-      <div class="text-[11px] text-zinc-500">coinbase.com • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:#1d4ed8">● finance</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">Coinbase</div><div class="text-[11px] text-zinc-500">coinbase.com • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● finance</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  </div>
 </div>
 
-<!-- Bottom App Nav - Like Real App -->
+<!-- Bottom App Nav - No Support, No Account -->
 <div class="fixed bottom-0 left-0 right-0 z-40">
   <div class="max-w-[500px] mx-auto px-4 pb-3">
     <div class="bg-zinc-900 text-white rounded-[24px] shadow-2xl flex justify-around py-3 px-2 border border-white/10">
       <button class="flex flex-col items-center gap-0.5 text-violet-400"><span class="text-lg">🏠</span><span class="text-[10px] font-bold">Home</span></button>
       <button onclick="document.getElementById('grid').scrollIntoView({behavior:'smooth'})" class="flex flex-col items-center gap-0.5 text-zinc-400"><span class="text-lg">📱</span><span class="text-[10px] font-bold">Apps</span></button>
       <button onclick="showOrders()" class="flex flex-col items-center gap-0.5 text-zinc-400"><span class="text-lg">🧾</span><span class="text-[10px] font-bold">Orders</span></button>
-      <a href="https://wa.me/" target="_blank" class="flex flex-col items-center gap-0.5 text-zinc-400"><span class="text-lg">💬</span><span class="text-[10px] font-bold">Support</span></a>
     </div>
   </div>
 </div>
 
 <!-- Order Modal -->
-<div id="modal" class="fixed inset-0 z-50"><div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal()"></div><div class="relative max-w-[480px] mx-auto mt-6 bg-white rounded-[28px] shadow-2xl overflow-hidden"><div id="modalHead" class="p-5 flex items-center gap-4 text-white bg-gradient-to-r from-zinc-800 to-black"><img id="mLogo" class="w-12 h-12 rounded-2xl bg-white p-1.5 object-contain shadow" src="https://www.google.com/s2/favicons?domain=tiktok.com&amp;sz=128"><div class="flex-1"><div id="mTitle" class="font-bold text-lg leading-none">TikTok</div><div class="text-xs text-white/80 mt-1">Order via WhatsApp &amp; Gmail — No price on site</div></div><button onclick="closeModal()" class="w-8 h-8 rounded-full bg-black/20 flex items-center justify-center">✕</button></div><form id="orderForm" onsubmit="submitOrder(event)" class="p-5 space-y-3"><input type="hidden" id="f_service" value="TikTok"><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">FULL NAME *</label><input id="f_name" required="" placeholder="Ava Mandy" class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border border-zinc-200 outline-none focus:border-black"></div><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">WHATSAPP *</label><input id="f_whatsapp" required="" type="tel" placeholder="+234..." class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border border-zinc-200 outline-none focus:border-black"></div><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">GMAIL *</label><input id="f_gmail" required="" type="email" placeholder="you@gmail.com" class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border border-zinc-200 outline-none focus:border-black"></div><div class="grid grid-cols-2 gap-3"><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">COUNTRY</label><select id="f_country" class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border"><option value="USA 🇺🇸">USA 🇺🇸</option><option value="UK 🇬🇧">UK 🇬🇧</option><option value="Canada 🇨🇦">Canada 🇨🇦</option><option value="Nigeria 🇳🇬">Nigeria 🇳🇬</option><option value="Germany 🇩🇪">Germany 🇩🇪</option><option value="France 🇫🇷">France 🇫🇷</option><option value="India 🇮🇳">India 🇮🇳</option><option value="Brazil 🇧🇷">Brazil 🇧🇷</option><option value="Netherlands 🇳🇱">Netherlands 🇳🇱</option><option value="Spain 🇪🇸">Spain 🇪🇸</option><option value="Italy 🇮🇹">Italy 🇮🇹</option><option value="Australia 🇦🇺">Australia 🇦🇺</option><option value="Turkey 🇹🇷">Turkey 🇹🇷</option><option value="Poland 🇵🇱">Poland 🇵🇱</option><option value="Sweden 🇸🇪">Sweden 🇸🇪</option><option value="UAE 🇦🇪">UAE 🇦🇪</option><option value="Saudi Arabia 🇸🇦">Saudi Arabia 🇸🇦</option><option value="South Africa 🇿🇦">South Africa 🇿🇦</option><option value="Kenya 🇰🇪">Kenya 🇰🇪</option><option value="Ghana 🇬🇭">Ghana 🇬🇭</option><option value="Mexico 🇲🇽">Mexico 🇲🇽</option><option value="Japan 🇯🇵">Japan 🇯🇵</option><option value="South Korea 🇰🇷">South Korea 🇰🇷</option><option value="Indonesia 🇮🇩">Indonesia 🇮🇩</option><option value="Philippines 🇵🇭">Philippines 🇵🇭</option><option value="Egypt 🇪🇬">Egypt 🇪🇬</option><option value="Russia 🇷🇺">Russia 🇷🇺</option><option value="Singapore 🇸🇬">Singapore 🇸🇬</option><option value="Qatar 🇶🇦">Qatar 🇶🇦</option></select></div><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">QTY</label><input id="f_qty" type="number" min="1" max="20" value="1" class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border"></div></div><textarea id="f_note" rows="2" placeholder="Note (optional)" class="w-full px-4 py-3 rounded-xl bg-zinc-50 border"></textarea><button id="submitBtn" class="w-full py-4 rounded-xl bg-zinc-900 text-white font-bold">PLACE ORDER → SEND TO TELEGRAM</button><div id="status" class="text-xs text-center"></div></form><div id="success" class="hidden p-8 text-center"><div class="w-14 h-14 mx-auto rounded-full bg-green-500 text-white flex items-center justify-center text-xl">✓</div><h3 class="font-bold mt-3">Sent to Telegram!</h3><p class="text-sm text-zinc-500 mt-1">Order for <b id="successService"></b> sent to bot. We will contact you.</p><button onclick="closeModal()" class="mt-4 px-6 py-2.5 rounded-full bg-black text-white font-bold text-sm">Close</button></div></div></div>
+<div id="modal" class="fixed inset-0 z-50 hidden"><div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeModal()"></div><div class="relative max-w-[480px] mx-auto mt-6 bg-white rounded-[28px] shadow-2xl overflow-hidden"><div id="modalHead" class="p-5 flex items-center gap-4 text-white"><img id="mLogo" class="w-12 h-12 rounded-2xl bg-white p-1.5 object-contain shadow"><div class="flex-1"><div id="mTitle" class="font-bold text-lg leading-none">WhatsApp</div><div class="text-xs text-white/80 mt-1">Order via WhatsApp &amp; Gmail — No price on site</div></div><button onclick="closeModal()" class="w-8 h-8 rounded-full bg-black/20 flex items-center justify-center">✕</button></div><form id="orderForm" onsubmit="submitOrder(event)" class="p-5 space-y-3"><input type="hidden" id="f_service"><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">FULL NAME *</label><input id="f_name" required="" placeholder="Ava Mandy" class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border border-zinc-200 outline-none focus:border-black"></div><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">WHATSAPP *</label><input id="f_whatsapp" required="" type="tel" placeholder="+234..." class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border border-zinc-200 outline-none focus:border-black"></div><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">GMAIL *</label><input id="f_gmail" required="" type="email" placeholder="you@gmail.com" class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border border-zinc-200 outline-none focus:border-black"></div><div class="grid grid-cols-2 gap-3"><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">COUNTRY</label><select id="f_country" class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border"><option value="USA 🇺🇸">USA 🇺🇸</option><option value="UK 🇬🇧">UK 🇬🇧</option><option value="Canada 🇨🇦">Canada 🇨🇦</option><option value="Nigeria 🇳🇬">Nigeria 🇳🇬</option><option value="Germany 🇩🇪">Germany 🇩🇪</option><option value="France 🇫🇷">France 🇫🇷</option><option value="India 🇮🇳">India 🇮🇳</option><option value="Brazil 🇧🇷">Brazil 🇧🇷</option><option value="Netherlands 🇳🇱">Netherlands 🇳🇱</option><option value="Spain 🇪🇸">Spain 🇪🇸</option><option value="Italy 🇮🇹">Italy 🇮🇹</option><option value="Australia 🇦🇺">Australia 🇦🇺</option><option value="Turkey 🇹🇷">Turkey 🇹🇷</option><option value="Poland 🇵🇱">Poland 🇵🇱</option><option value="Sweden 🇸🇪">Sweden 🇸🇪</option><option value="UAE 🇦🇪">UAE 🇦🇪</option><option value="Saudi Arabia 🇸🇦">Saudi Arabia 🇸🇦</option><option value="South Africa 🇿🇦">South Africa 🇿🇦</option><option value="Kenya 🇰🇪">Kenya 🇰🇪</option><option value="Ghana 🇬🇭">Ghana 🇬🇭</option><option value="Mexico 🇲🇽">Mexico 🇲🇽</option><option value="Japan 🇯🇵">Japan 🇯🇵</option><option value="South Korea 🇰🇷">South Korea 🇰🇷</option><option value="Indonesia 🇮🇩">Indonesia 🇮🇩</option><option value="Philippines 🇵🇭">Philippines 🇵🇭</option><option value="Egypt 🇪🇬">Egypt 🇪🇬</option><option value="Russia 🇷🇺">Russia 🇷🇺</option><option value="Singapore 🇸🇬">Singapore 🇸🇬</option><option value="Qatar 🇶🇦">Qatar 🇶🇦</option></select></div><div><label class="text-[11px] font-bold tracking-widest text-zinc-500">QTY</label><input id="f_qty" type="number" min="1" max="20" value="1" class="mt-1 w-full px-4 py-3.5 rounded-xl bg-zinc-50 border"></div></div><textarea id="f_note" rows="2" placeholder="Note (optional)" class="w-full px-4 py-3 rounded-xl bg-zinc-50 border"></textarea><button id="submitBtn" class="w-full py-4 rounded-xl bg-zinc-900 text-white font-bold">PLACE ORDER → SEND TO TELEGRAM</button><div id="status" class="text-xs text-center"></div></form>
+<!-- Success - Now shows what user ordered + pending message -->
+<div id="success" class="hidden p-6 text-center">
+  <div class="w-14 h-14 mx-auto rounded-full bg-amber-400 text-white flex items-center justify-center text-2xl">⏳</div>
+  <h3 class="font-bold text-lg mt-3">Your Order Has Been On Pending!</h3>
+  <div id="orderSummary" class="mt-4 text-left bg-[#fffbeb] border border-amber-200 rounded-2xl p-4 text-sm space-y-1.5"></div>
+  <p class="text-sm text-zinc-600 mt-4 leading-relaxed">We will reach out to you in <b class="text-black">less than an hour</b> on WhatsApp and Gmail to complete your order.</p>
+  <p class="text-xs text-zinc-400 mt-2">Thank you for using SMS VIRTUAL</p>
+  <button onclick="closeModal()" class="mt-4 px-6 py-2.5 rounded-full bg-black text-white font-bold text-sm">Done</button>
+</div>
+</div></div>
 
 <script>
 const BOT_TOKEN="8344044677:AAFvt5X4TrRZsJKvN188NbbHoPXi4fAY64w";
 const CHAT_ID="7783446228";
 const countries=["USA 🇺🇸","UK 🇬🇧","Canada 🇨🇦","Nigeria 🇳🇬","Germany 🇩🇪","France 🇫🇷","India 🇮🇳","Brazil 🇧🇷","Netherlands 🇳🇱","Spain 🇪🇸","Italy 🇮🇹","Australia 🇦🇺","Turkey 🇹🇷","Poland 🇵🇱","Sweden 🇸🇪","UAE 🇦🇪","Saudi Arabia 🇸🇦","South Africa 🇿🇦","Kenya 🇰🇪","Ghana 🇬🇭","Mexico 🇲🇽","Japan 🇯🇵","South Korea 🇰🇷","Indonesia 🇮🇩","Philippines 🇵🇭","Egypt 🇪🇬","Russia 🇷🇺","Singapore 🇸🇬","Qatar 🇶🇦"];
-
 const services=[
-{name:"WhatsApp",domain:"whatsapp.com",cat:"messaging",bg:"#dcfce7",color:"#15803d",grad:"from-green-500 to-emerald-600"},
-{name:"Telegram",domain:"telegram.org",cat:"messaging",bg:"#dbeafe",color:"#1d4ed8",grad:"from-sky-500 to-blue-600"},
-{name:"Gmail",domain:"gmail.com",cat:"google",bg:"#fee2e2",color:"#b91c1c",grad:"from-red-500 to-rose-600"},
-{name:"Google",domain:"google.com",cat:"google",bg:"#dbeafe",color:"#1d4ed8",grad:"from-blue-500 to-indigo-600"},
-{name:"Facebook",domain:"facebook.com",cat:"social",bg:"#dbeafe",color:"#1d4ed8",grad:"from-blue-600 to-blue-800"},
-{name:"Instagram",domain:"instagram.com",cat:"social",bg:"#fce7f3",color:"#be185d",grad:"from-pink-500 to-purple-600"},
-{name:"TikTok",domain:"tiktok.com",cat:"social",bg:"#e2e8f0",color:"#0f172a",grad:"from-zinc-800 to-black"},
-{name:"X / Twitter",domain:"x.com",cat:"social",bg:"#e2e8f0",color:"#0f172a",grad:"from-zinc-700 to-black"},
-{name:"Discord",domain:"discord.com",cat:"messaging",bg:"#e0e7ff",color:"#4338ca",grad:"from-indigo-500 to-violet-600"},
-{name:"Snapchat",domain:"snapchat.com",cat:"social",bg:"#fef9c3",color:"#854d0e",grad:"from-yellow-400 to-amber-500"},
-{name:"Amazon",domain:"amazon.com",cat:"shopping",bg:"#fef3c7",color:"#92400e",grad:"from-amber-500 to-orange-600"},
-{name:"Apple ID",domain:"apple.com",cat:"google",bg:"#e2e8f0",color:"#0f172a",grad:"from-zinc-700 to-black"},
-{name:"Microsoft",domain:"microsoft.com",cat:"google",bg:"#dbeafe",color:"#0369a1",grad:"from-sky-500 to-blue-600"},
-{name:"Uber",domain:"uber.com",cat:"shopping",bg:"#e2e8f0",color:"#0f172a",grad:"from-zinc-800 to-black"},
-{name:"Netflix",domain:"netflix.com",cat:"shopping",bg:"#fee2e2",color:"#b91c1c",grad:"from-red-600 to-red-800"},
-{name:"PayPal",domain:"paypal.com",cat:"finance",bg:"#dbeafe",color:"#1e40af",grad:"from-blue-600 to-indigo-700"},
-{name:"Binance",domain:"binance.com",cat:"finance",bg:"#fef9c3",color:"#854d0e",grad:"from-yellow-500 to-amber-600"},
-{name:"LinkedIn",domain:"linkedin.com",cat:"social",bg:"#dbeafe",color:"#1e40af",grad:"from-blue-700 to-sky-600"},
-{name:"OpenAI",domain:"openai.com",cat:"google",bg:"#e0e7ff",color:"#4338ca",grad:"from-violet-600 to-indigo-600"},
-{name:"Spotify",domain:"spotify.com",cat:"shopping",bg:"#dcfce7",color:"#15803d",grad:"from-green-500 to-emerald-600"},
-{name:"Airbnb",domain:"airbnb.com",cat:"shopping",bg:"#ffe4e6",color:"#be123c",grad:"from-rose-500 to-pink-600"},
-{name:"LINE",domain:"line.me",cat:"messaging",bg:"#dcfce7",color:"#15803d",grad:"from-green-500 to-lime-600"},
-{name:"Shopee",domain:"shopee.com",cat:"shopping",bg:"#ffedd5",color:"#9a3412",grad:"from-orange-500 to-amber-600"},
-{name:"Coinbase",domain:"coinbase.com",cat:"finance",bg:"#dbeafe",color:"#1d4ed8",grad:"from-blue-600 to-indigo-600"},
+{name:"WhatsApp",domain:"whatsapp.com",cat:"messaging",grad:"from-green-500 to-emerald-600"},
+{name:"Telegram",domain:"telegram.org",cat:"messaging",grad:"from-sky-500 to-blue-600"},
+{name:"Gmail",domain:"gmail.com",cat:"google",grad:"from-red-500 to-rose-600"},
+{name:"Google",domain:"google.com",cat:"google",grad:"from-blue-500 to-indigo-600"},
+{name:"Facebook",domain:"facebook.com",cat:"social",grad:"from-blue-600 to-blue-800"},
+{name:"Instagram",domain:"instagram.com",cat:"social",grad:"from-pink-500 to-purple-600"},
+{name:"TikTok",domain:"tiktok.com",cat:"social",grad:"from-zinc-800 to-black"},
+{name:"X / Twitter",domain:"x.com",cat:"social",grad:"from-zinc-700 to-black"},
+{name:"Discord",domain:"discord.com",cat:"messaging",grad:"from-indigo-500 to-violet-600"},
+{name:"Snapchat",domain:"snapchat.com",cat:"social",grad:"from-yellow-400 to-amber-500"},
+{name:"Amazon",domain:"amazon.com",cat:"shopping",grad:"from-amber-500 to-orange-600"},
+{name:"Apple ID",domain:"apple.com",cat:"google",grad:"from-zinc-700 to-black"},
+{name:"Microsoft",domain:"microsoft.com",cat:"google",grad:"from-sky-500 to-blue-600"},
+{name:"Uber",domain:"uber.com",cat:"shopping",grad:"from-zinc-800 to-black"},
+{name:"Netflix",domain:"netflix.com",cat:"shopping",grad:"from-red-600 to-red-800"},
+{name:"PayPal",domain:"paypal.com",cat:"finance",grad:"from-blue-600 to-indigo-700"},
+{name:"Binance",domain:"binance.com",cat:"finance",grad:"from-yellow-500 to-amber-600"},
+{name:"LinkedIn",domain:"linkedin.com",cat:"social",grad:"from-blue-700 to-sky-600"},
+{name:"OpenAI",domain:"openai.com",cat:"google",grad:"from-violet-600 to-indigo-600"},
+{name:"Spotify",domain:"spotify.com",cat:"shopping",grad:"from-green-500 to-emerald-600"},
+{name:"Airbnb",domain:"airbnb.com",cat:"shopping",grad:"from-rose-500 to-pink-600"},
+{name:"LINE",domain:"line.me",cat:"messaging",grad:"from-green-500 to-lime-600"},
+{name:"Shopee",domain:"shopee.com",cat:"shopping",grad:"from-orange-500 to-amber-600"},
+{name:"Coinbase",domain:"coinbase.com",cat:"finance",grad:"from-blue-600 to-indigo-600"},
 ];
-
 function logo(d){return `https://logo.clearbit.com/${d}?size=128`;}
 function fav(d){return `https://www.google.com/s2/favicons?domain=${d}&sz=128`;}
 const cf=document.getElementById('countryFilter');const fc=document.getElementById('f_country');
 countries.forEach(c=>{let o=document.createElement('option');o.value=c;o.textContent=c;cf.appendChild(o);fc.appendChild(o.cloneNode(true));});
 let all=document.createElement('option');all.value='all';all.textContent='All Countries';all.selected=true;cf.prepend(all);
 let activeCat='all';
-function setCat(cat){
- activeCat=cat;
- document.querySelectorAll('.cat-btn').forEach(b=>{b.classList.remove('bg-black','text-white'); if(b.dataset.cat===cat){b.classList.add('bg-black','text-white');}});
- filterServices();
-}
+function setCat(cat){activeCat=cat;document.querySelectorAll('.cat-btn').forEach(b=>{b.classList.remove('bg-black','text-white');if(b.dataset.cat===cat){b.classList.add('bg-black','text-white');}});filterServices();}
 function render(list){
  document.getElementById('grid').innerHTML=list.map(s=>`
   <div class="card bg-white rounded-[20px] overflow-hidden border border-zinc-200" onclick="openModal('${s.name}','${s.domain}','${s.grad}')">
@@ -513,14 +346,7 @@ function render(list){
       <div class="w-[52px] h-[52px] bg-white rounded-[16px] shadow-lg flex items-center justify-center"><img src="${logo(s.domain)}" onerror="this.src='${fav(s.domain)}'" class="w-8 h-8 object-contain"></div>
       <span class="text-[9px] font-bold px-2 py-1 rounded-full bg-white/20 backdrop-blur border border-white/30 text-white">AVAILABLE</span>
     </div>
-    <div class="p-3.5">
-      <div class="font-bold text-sm">${s.name}</div>
-      <div class="text-[11px] text-zinc-500">${s.domain} • No SIM</div>
-      <div class="mt-3 flex justify-between items-center">
-        <span class="text-[11px] font-semibold" style="color:${s.color}">● ${s.cat}</span>
-        <button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button>
-      </div>
-    </div>
+    <div class="p-3.5"><div class="font-bold text-sm">${s.name}</div><div class="text-[11px] text-zinc-500">${s.domain} • No SIM</div><div class="mt-3 flex justify-between items-center"><span class="text-[11px] font-semibold text-zinc-500">● ${s.cat}</span><button class="px-3 py-1.5 rounded-full bg-zinc-900 text-white text-[11px] font-bold">Get Number</button></div></div>
   </div>
  `).join('');
 }
@@ -540,16 +366,33 @@ function openModal(name,domain,grad){
  document.getElementById('success').classList.add('hidden');
 }
 function closeModal(){document.getElementById('modal').classList.add('hidden');}
-function showOrders(){alert('Your orders are saved locally. Each order also goes to Telegram bot instantly.');}
+function showOrders(){alert('Your orders are saved. Check Telegram bot for all orders.');}
 async function submitOrder(e){
  e.preventDefault();
  const btn=document.getElementById('submitBtn');const status=document.getElementById('status');
  const data={service:document.getElementById('f_service').value,name:document.getElementById('f_name').value,whatsapp:document.getElementById('f_whatsapp').value,gmail:document.getElementById('f_gmail').value,country:document.getElementById('f_country').value,qty:document.getElementById('f_qty').value,note:document.getElementById('f_note').value,time:new Date().toLocaleString()};
  btn.disabled=true;btn.innerText='Sending to Telegram...';status.innerText='Connecting to bot...';
- const text=`🚀 NEW SMS VIRTUAL ORDER\n📱 App: ${data.service}\n🌍 Country: ${data.country}\n🔢 Qty: ${data.qty}\n👤 Name: ${data.name}\n📱 WhatsApp: ${data.whatsapp}\n📧 Gmail: ${data.gmail}\n📝 Note: ${data.note||'None'}\n⏰ ${data.time}`;
- try{let r=await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:CHAT_ID,text:text})});let j=await r.json();if(!j.ok) throw new Error(j.description);document.getElementById('orderForm').classList.add('hidden');document.getElementById('success').classList.remove('hidden');document.getElementById('successService').innerText=data.service;}
- catch(err){try{let r2=await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(text)}`);let j2=await r2.json();if(j2.ok){document.getElementById('orderForm').classList.add('hidden');document.getElementById('success').classList.remove('hidden');document.getElementById('successService').innerText=data.service;return;}throw new Error(j2.description);}catch(e2){status.innerHTML=`<span style="color:red">Error: ${e2.message} - Send /start to bot</span>`;}}
- finally{btn.disabled=false;btn.innerText='PLACE ORDER → SEND TO TELEGRAM';}
+ const text=`🚀 NEW SMS VIRTUAL ORDER\n📱 App: ${data.service}\n🌍 Country: ${data.country}\n🔢 Qty: ${data.qty}\n👤 Name: ${data.name}\n📱 WhatsApp: ${data.whatsapp}\n📧 Gmail: ${data.gmail}\n📝 Note: ${data.note||'None'}\n⏰ ${data.time}\nStatus: PENDING - Will reach out in less than an hour`;
+ try{
+  let r=await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:CHAT_ID,text:text})});
+  let j=await r.json();if(!j.ok) throw new Error(j.description);
+  showSuccess(data);
+ }catch(err){
+  try{let r2=await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(text)}`);let j2=await r2.json();if(j2.ok){showSuccess(data);return;}throw new Error(j2.description);}catch(e2){status.innerHTML=`<span style="color:red">Error: ${e2.message} - Send /start to bot</span>`;}
+ }finally{btn.disabled=false;btn.innerText='PLACE ORDER → SEND TO TELEGRAM';}
+}
+function showSuccess(data){
+  document.getElementById('orderForm').classList.add('hidden');
+  document.getElementById('success').classList.remove('hidden');
+  document.getElementById('orderSummary').innerHTML=`
+    <div><b>📱 You Ordered:</b> ${data.service} SMS Number</div>
+    <div><b>🌍 Country:</b> ${data.country}</div>
+    <div><b>🔢 Quantity:</b> ${data.qty} number(s)</div>
+    <div><b>👤 Name:</b> ${data.name}</div>
+    <div><b>📱 WhatsApp:</b> ${data.whatsapp}</div>
+    <div><b>📧 Gmail:</b> ${data.gmail}</div>
+    <div><span class="inline-flex px-2 py-0.5 rounded-full bg-amber-100 border border-amber-300 text-amber-800 text-xs font-bold">⏳ STATUS: PENDING</span></div>
+  `;
 }
 render(services);
 </script>
